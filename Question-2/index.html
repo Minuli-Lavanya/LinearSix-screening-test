@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Calendar Free/Busy Intervals</title>
+  
+
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="script.js"></script>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #122145;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #122145;
+      color: #fff;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #122145;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer a {
+      color: #122145;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body onload="loadClient()">
+  <div class="container">
+    <h1>Google Calendar Free/Busy Intervals</h1>
+    <p>Click the button below to check the busy intervals for your Google Calendar.</p>
+    <button onclick="loadClient()">Check Busy Intervals</button>
+    <footer>
+      <p>Developed by <a>Minuli</a></p>
+    </footer>
+  </div>
+</body>
+</html>
+
